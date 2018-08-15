@@ -36,7 +36,7 @@
             this.EntryFeeLabel = new System.Windows.Forms.Label();
             this.TeamSelectionDropDown = new System.Windows.Forms.ComboBox();
             this.SelectTeamLabel = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.CreateTeamlinkLabel = new System.Windows.Forms.LinkLabel();
             this.AddTeamButton = new System.Windows.Forms.Button();
             this.AddPrizeButton = new System.Windows.Forms.Button();
             this.TournamentPlayersListBox = new System.Windows.Forms.ListBox();
@@ -115,16 +115,16 @@
             this.SelectTeamLabel.TabIndex = 14;
             this.SelectTeamLabel.Text = "Equipe Existante";
             // 
-            // linkLabel1
+            // CreateTeamlinkLabel
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(233, 364);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(121, 25);
-            this.linkLabel1.TabIndex = 16;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Créer équipe";
+            this.CreateTeamlinkLabel.AutoSize = true;
+            this.CreateTeamlinkLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreateTeamlinkLabel.Location = new System.Drawing.Point(233, 364);
+            this.CreateTeamlinkLabel.Name = "CreateTeamlinkLabel";
+            this.CreateTeamlinkLabel.Size = new System.Drawing.Size(121, 25);
+            this.CreateTeamlinkLabel.TabIndex = 16;
+            this.CreateTeamlinkLabel.TabStop = true;
+            this.CreateTeamlinkLabel.Text = "Créer équipe";
             // 
             // AddTeamButton
             // 
@@ -261,7 +261,7 @@
             this.Controls.Add(this.TournamentPlayersListBox);
             this.Controls.Add(this.AddPrizeButton);
             this.Controls.Add(this.AddTeamButton);
-            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.CreateTeamlinkLabel);
             this.Controls.Add(this.TeamSelectionDropDown);
             this.Controls.Add(this.SelectTeamLabel);
             this.Controls.Add(this.EntryFeeValue);
@@ -288,7 +288,7 @@
         private System.Windows.Forms.Label EntryFeeLabel;
         private System.Windows.Forms.ComboBox TeamSelectionDropDown;
         private System.Windows.Forms.Label SelectTeamLabel;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel CreateTeamlinkLabel;
         private System.Windows.Forms.Button AddTeamButton;
         private System.Windows.Forms.Button AddPrizeButton;
         private System.Windows.Forms.ListBox TournamentPlayersListBox;
