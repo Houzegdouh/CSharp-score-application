@@ -27,6 +27,28 @@ namespace TrackerLib
         /// <summary>
         /// Pourcentage de la somme initiale
         /// </summary>
-        public double PrizePourcentage { get; set; }
+        public double PrizePercentage { get; set; }
+        public PrizeModel()
+        {
+
+        }
+        public PrizeModel(string placeNumber, string placeName, string prizeAmount, string prizePourcentage)
+        {
+            this.PlaceName = placeName;
+
+            int placeNumberValue = 0;
+            int.TryParse(placeNumber, out placeNumberValue);
+            this.PlaceNumber = placeNumberValue;
+
+            decimal prizeAmountValue = 0;
+            decimal.TryParse(prizeAmount, out prizeAmountValue);
+            this.PrizeAmount = prizeAmountValue;
+
+            double prizePercentageValue = 0;
+            double.TryParse(prizePourcentage, out prizePercentageValue);
+            this.PrizePercentage = prizePercentageValue;
+
+
+        }
     }
 }
