@@ -16,6 +16,7 @@ namespace TrackerUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
             // Initialisation de la base de données
             TrackerLib.GlobalConfig.InitializeConnections(true, true);
             Application.Run(new CreatePrizeForm());

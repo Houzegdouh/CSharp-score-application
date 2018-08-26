@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TrackerLib.Models;
 
-namespace TrackerLib
+namespace TrackerLib.DataAccess
 {
-    class TextConnection : IDataConnection
+    class TextConnector : IDataConnection
     {
         // TODO - Cabler la création du prix au fichier text
         /// <summary>
