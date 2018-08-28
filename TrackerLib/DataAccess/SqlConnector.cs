@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +18,10 @@ namespace TrackerLib.DataAccess
         /// <returns>information sur le prix, Id inclus</returns>
         public PrizeModel CreatePrize(PrizeModel model)
         {
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString("Tournaments")))
+            {
+
+            };
             model.Id = 1;
             return model;
         }
