@@ -16,6 +16,11 @@ namespace TrackerLib.DataAccess
 	//@id int = 0 output
     class SqlConnector : IDataConnection
     {
+        public PrizeModel CreatePerson(PersonModel model)
+        {
+            throw new NotImplementedException();
+        }
+
         // TODO - Faire réellement enregistrer le prix dans la base de données
         /// <summary>
         /// Enregistre un prix dans la base de données

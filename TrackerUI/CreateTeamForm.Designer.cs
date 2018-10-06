@@ -36,14 +36,14 @@
             this.SelectMemberLabel = new System.Windows.Forms.Label();
             this.AddMemberButton = new System.Windows.Forms.Button();
             this.AddMemberGroupBox = new System.Windows.Forms.GroupBox();
-            this.FirstNameValue = new System.Windows.Forms.TextBox();
-            this.FirstNameLabel = new System.Windows.Forms.Label();
-            this.LastNameValue = new System.Windows.Forms.TextBox();
-            this.LastNameLabel = new System.Windows.Forms.Label();
             this.CellPhoneValue = new System.Windows.Forms.TextBox();
             this.CellphoneLabel = new System.Windows.Forms.Label();
             this.EmailValue = new System.Windows.Forms.TextBox();
             this.EmailLabel = new System.Windows.Forms.Label();
+            this.LastNameValue = new System.Windows.Forms.TextBox();
+            this.LastNameLabel = new System.Windows.Forms.Label();
+            this.FirstNameValue = new System.Windows.Forms.TextBox();
+            this.FirstNameLabel = new System.Windows.Forms.Label();
             this.CreateMemberButton = new System.Windows.Forms.Button();
             this.TeamMemberListBox = new System.Windows.Forms.ListBox();
             this.DeleteSelectedPlayerButton = new System.Windows.Forms.Button();
@@ -133,42 +133,6 @@
             this.AddMemberGroupBox.Text = "Ajouter Nouveau Membre";
             this.AddMemberGroupBox.Visible = false;
             // 
-            // FirstNameValue
-            // 
-            this.FirstNameValue.Location = new System.Drawing.Point(109, 34);
-            this.FirstNameValue.Name = "FirstNameValue";
-            this.FirstNameValue.Size = new System.Drawing.Size(250, 35);
-            this.FirstNameValue.TabIndex = 11;
-            // 
-            // FirstNameLabel
-            // 
-            this.FirstNameLabel.AutoSize = true;
-            this.FirstNameLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FirstNameLabel.ForeColor = System.Drawing.Color.DarkGreen;
-            this.FirstNameLabel.Location = new System.Drawing.Point(18, 39);
-            this.FirstNameLabel.Name = "FirstNameLabel";
-            this.FirstNameLabel.Size = new System.Drawing.Size(85, 30);
-            this.FirstNameLabel.TabIndex = 10;
-            this.FirstNameLabel.Text = "Prénom";
-            // 
-            // LastNameValue
-            // 
-            this.LastNameValue.Location = new System.Drawing.Point(109, 75);
-            this.LastNameValue.Name = "LastNameValue";
-            this.LastNameValue.Size = new System.Drawing.Size(250, 35);
-            this.LastNameValue.TabIndex = 13;
-            // 
-            // LastNameLabel
-            // 
-            this.LastNameLabel.AutoSize = true;
-            this.LastNameLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LastNameLabel.ForeColor = System.Drawing.Color.DarkGreen;
-            this.LastNameLabel.Location = new System.Drawing.Point(18, 80);
-            this.LastNameLabel.Name = "LastNameLabel";
-            this.LastNameLabel.Size = new System.Drawing.Size(59, 30);
-            this.LastNameLabel.TabIndex = 12;
-            this.LastNameLabel.Text = "Nom";
-            // 
             // CellPhoneValue
             // 
             this.CellPhoneValue.Location = new System.Drawing.Point(109, 157);
@@ -205,6 +169,42 @@
             this.EmailLabel.TabIndex = 14;
             this.EmailLabel.Text = "Email";
             // 
+            // LastNameValue
+            // 
+            this.LastNameValue.Location = new System.Drawing.Point(109, 75);
+            this.LastNameValue.Name = "LastNameValue";
+            this.LastNameValue.Size = new System.Drawing.Size(250, 35);
+            this.LastNameValue.TabIndex = 13;
+            // 
+            // LastNameLabel
+            // 
+            this.LastNameLabel.AutoSize = true;
+            this.LastNameLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LastNameLabel.ForeColor = System.Drawing.Color.DarkGreen;
+            this.LastNameLabel.Location = new System.Drawing.Point(18, 80);
+            this.LastNameLabel.Name = "LastNameLabel";
+            this.LastNameLabel.Size = new System.Drawing.Size(59, 30);
+            this.LastNameLabel.TabIndex = 12;
+            this.LastNameLabel.Text = "Nom";
+            // 
+            // FirstNameValue
+            // 
+            this.FirstNameValue.Location = new System.Drawing.Point(109, 34);
+            this.FirstNameValue.Name = "FirstNameValue";
+            this.FirstNameValue.Size = new System.Drawing.Size(250, 35);
+            this.FirstNameValue.TabIndex = 11;
+            // 
+            // FirstNameLabel
+            // 
+            this.FirstNameLabel.AutoSize = true;
+            this.FirstNameLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FirstNameLabel.ForeColor = System.Drawing.Color.DarkGreen;
+            this.FirstNameLabel.Location = new System.Drawing.Point(18, 39);
+            this.FirstNameLabel.Name = "FirstNameLabel";
+            this.FirstNameLabel.Size = new System.Drawing.Size(85, 30);
+            this.FirstNameLabel.TabIndex = 10;
+            this.FirstNameLabel.Text = "Prénom";
+            // 
             // CreateMemberButton
             // 
             this.CreateMemberButton.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
@@ -219,6 +219,7 @@
             this.CreateMemberButton.TabIndex = 20;
             this.CreateMemberButton.Text = "Créer membre";
             this.CreateMemberButton.UseVisualStyleBackColor = true;
+            this.CreateMemberButton.Click += new System.EventHandler(this.CreateMemberButton_Click);
             // 
             // TeamMemberListBox
             // 
