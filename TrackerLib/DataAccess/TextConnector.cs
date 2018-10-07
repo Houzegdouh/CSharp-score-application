@@ -11,10 +11,24 @@ namespace TrackerLib.DataAccess
     public class TextConnector : IDataConnection
     {
         private const string PrizeFile = "PrizeFile.csv";
+        private const string PeopleFile = "PersonFile.csv";
 
-        public PrizeModel CreatePerson(PersonModel model)
+        public PersonModel CreatePerson(PersonModel model)
         {
-            throw new NotImplementedException();
+            List<PersonModel> people = PeopleFile.FullFilePath().loadFile().convertToPersonModels();
+            int currentId = 1;
+            if (people.Count > 0)
+            {
+                currentId = people.OrderByDescending(x => x.Id).First().Id + 1;
+            }
+            model.Id = currentId;
+            // Add the new record with the new ID (max + 1)
+
+            people.Add(model);
+            // Convert the Prizes to a list<string>
+            // save the list<string> to a file
+            people.SaveToPeopleFile(PeopleFile);
+            return model;
         }
 
         // TODO - Cabler la création du prix au fichier text

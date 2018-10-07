@@ -9,6 +9,10 @@ namespace TrackerLib.Models
     public class PersonModel
     {
         /// <summary>
+        /// Id unique du prix
+        /// </summary>
+        public int Id { get; set; }
+        /// <summary>
         /// Prénom du participant
         /// </summary>
         public string FirstName { get; set; }

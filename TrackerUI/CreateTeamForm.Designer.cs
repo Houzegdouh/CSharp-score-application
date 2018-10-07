@@ -83,7 +83,7 @@
             // MemberSelectionDropDown
             // 
             this.MemberSelectionDropDown.FormattingEnabled = true;
-            this.MemberSelectionDropDown.Location = new System.Drawing.Point(66, 208);
+            this.MemberSelectionDropDown.Location = new System.Drawing.Point(68, 185);
             this.MemberSelectionDropDown.Name = "MemberSelectionDropDown";
             this.MemberSelectionDropDown.Size = new System.Drawing.Size(290, 38);
             this.MemberSelectionDropDown.TabIndex = 17;
@@ -93,7 +93,7 @@
             this.SelectMemberLabel.AutoSize = true;
             this.SelectMemberLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SelectMemberLabel.ForeColor = System.Drawing.Color.DarkGreen;
-            this.SelectMemberLabel.Location = new System.Drawing.Point(64, 180);
+            this.SelectMemberLabel.Location = new System.Drawing.Point(63, 157);
             this.SelectMemberLabel.Name = "SelectMemberLabel";
             this.SelectMemberLabel.Size = new System.Drawing.Size(153, 25);
             this.SelectMemberLabel.TabIndex = 16;
@@ -107,7 +107,7 @@
             this.AddMemberButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddMemberButton.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddMemberButton.ForeColor = System.Drawing.Color.DarkGreen;
-            this.AddMemberButton.Location = new System.Drawing.Point(117, 268);
+            this.AddMemberButton.Location = new System.Drawing.Point(117, 229);
             this.AddMemberButton.Name = "AddMemberButton";
             this.AddMemberButton.Size = new System.Drawing.Size(184, 40);
             this.AddMemberButton.TabIndex = 18;
@@ -125,13 +125,15 @@
             this.AddMemberGroupBox.Controls.Add(this.FirstNameValue);
             this.AddMemberGroupBox.Controls.Add(this.FirstNameLabel);
             this.AddMemberGroupBox.ForeColor = System.Drawing.Color.DarkGreen;
-            this.AddMemberGroupBox.Location = new System.Drawing.Point(66, 331);
+            this.AddMemberGroupBox.Location = new System.Drawing.Point(68, 275);
+            this.AddMemberGroupBox.MaximumSize = new System.Drawing.Size(700, 500);
+            this.AddMemberGroupBox.MinimumSize = new System.Drawing.Size(100, 30);
             this.AddMemberGroupBox.Name = "AddMemberGroupBox";
-            this.AddMemberGroupBox.Size = new System.Drawing.Size(407, 232);
+            this.AddMemberGroupBox.Size = new System.Drawing.Size(398, 221);
             this.AddMemberGroupBox.TabIndex = 19;
             this.AddMemberGroupBox.TabStop = false;
             this.AddMemberGroupBox.Text = "Ajouter Nouveau Membre";
-            this.AddMemberGroupBox.Visible = false;
+            this.AddMemberGroupBox.Enter += new System.EventHandler(this.AddMemberGroupBox_Enter);
             // 
             // CellPhoneValue
             // 
@@ -213,7 +215,7 @@
             this.CreateMemberButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CreateMemberButton.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CreateMemberButton.ForeColor = System.Drawing.Color.DarkGreen;
-            this.CreateMemberButton.Location = new System.Drawing.Point(175, 578);
+            this.CreateMemberButton.Location = new System.Drawing.Point(165, 513);
             this.CreateMemberButton.Name = "CreateMemberButton";
             this.CreateMemberButton.Size = new System.Drawing.Size(184, 40);
             this.CreateMemberButton.TabIndex = 20;
@@ -229,7 +231,7 @@
             this.TeamMemberListBox.ItemHeight = 30;
             this.TeamMemberListBox.Location = new System.Drawing.Point(509, 104);
             this.TeamMemberListBox.Name = "TeamMemberListBox";
-            this.TeamMemberListBox.Size = new System.Drawing.Size(282, 422);
+            this.TeamMemberListBox.Size = new System.Drawing.Size(282, 392);
             this.TeamMemberListBox.TabIndex = 21;
             // 
             // DeleteSelectedPlayerButton
@@ -267,7 +269,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(1370, 750);
+            this.ClientSize = new System.Drawing.Size(952, 612);
             this.Controls.Add(this.CreateTeamButton);
             this.Controls.Add(this.DeleteSelectedPlayerButton);
             this.Controls.Add(this.TeamMemberListBox);

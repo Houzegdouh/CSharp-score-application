@@ -50,12 +50,42 @@ namespace TrackerLib.DataAccess.TextHelpers
             return output;
         }
 
-        public static void SaveToPrizeFile (this List<PrizeModel> models, string fileName)
+        public static void SaveToPrizeFile(this List<PrizeModel> models, string fileName)
         {
             List<string> lines = new List<string>();
-            foreach(PrizeModel p in models)
+            foreach (PrizeModel p in models)
             {
                 lines.Add($"{ p.Id }, { p.PlaceNumber }, { p.PlaceName }, { p.PrizeAmount }, { p.PrizePercentage }");
+            }
+            File.WriteAllLines(fileName.FullFilePath(), lines);
+        }
+
+        public static List<PersonModel> convertToPersonModels(this List<string> lines)
+        {
+            List<PersonModel> output = new List<PersonModel>();
+            foreach (string line in lines)
+            {
+                string[] cols = line.Split(',');
+                PersonModel p = new PersonModel
+                {
+                    Id = int.Parse(cols[0]),
+                    FirstName = cols[1],
+                    LastName = cols[2],
+                    EmailAdress = cols[3],
+                    CellphoneNumber = cols[4]
+                };
+                output.Add(p);
+            }
+
+            return output;
+        }
+
+        public static void SaveToPeopleFile (this List<PersonModel> models, string fileName)
+        {
+            List<string> lines = new List<string>();
+            foreach(PersonModel p in models)
+            {
+                lines.Add($"{ p.Id }, { p.FirstName }, { p.LastName }, { p.EmailAdress }, { p.CellphoneNumber }");
             }
             File.WriteAllLines(fileName.FullFilePath(), lines);
         }

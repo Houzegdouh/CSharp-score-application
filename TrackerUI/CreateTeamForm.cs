@@ -30,6 +30,11 @@ namespace TrackerUI
                 p.CellphoneNumber = CellPhoneValue.Text;
 
                 GlobalConfig.Connection.CreatePerson(p);
+
+                FirstNameValue.Text = "";
+                LastNameValue.Text = "";
+                EmailValue.Text = "";
+                CellPhoneValue.Text = "";
             }
             else
             {
@@ -57,6 +62,11 @@ namespace TrackerUI
                 return false;
             }
             return true;
+        }
+
+        private void AddMemberGroupBox_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
