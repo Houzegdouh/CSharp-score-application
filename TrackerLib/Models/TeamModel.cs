@@ -9,13 +9,17 @@ namespace TrackerLib.Models
     public class TeamModel
     {
         /// <summary>
-        /// Membre de l'équipe participante, la liste ne contiendra qu'une seule personne si la participation est individuelle
+        /// Identifiant de l'équipe
         /// </summary>
-        public List<PersonModel> TeamMembers { get; set; } = new List<PersonModel>();
+        public int Id { get; set; }
         /// <summary>
         /// Nom de l'équipe
         /// </summary>
         public string TeamName { get; set; }
+        /// <summary>
+        /// Membre de l'équipe participante, la liste ne contiendra qu'une seule personne si la participation est individuelle
+        /// </summary>
+        public List<PersonModel> TeamMembers { get; set; } = new List<PersonModel>();
 
     }
 }

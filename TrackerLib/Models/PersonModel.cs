@@ -28,5 +28,11 @@ namespace TrackerLib.Models
         /// Numéro de téléphone du participant
         /// </summary>
         public string CellphoneNumber { get; set; }
+        public string FullName
+        {
+            get {
+                return $"{ FirstName } { LastName }";
+                }
+        }
     }
 }

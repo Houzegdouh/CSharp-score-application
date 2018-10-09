@@ -113,6 +113,7 @@
             this.AddMemberButton.TabIndex = 18;
             this.AddMemberButton.Text = "Ajouter membre";
             this.AddMemberButton.UseVisualStyleBackColor = true;
+            this.AddMemberButton.Click += new System.EventHandler(this.AddMemberButton_Click);
             // 
             // AddMemberGroupBox
             // 
@@ -248,6 +249,7 @@
             this.DeleteSelectedPlayerButton.TabIndex = 22;
             this.DeleteSelectedPlayerButton.Text = "Supprimer sélection";
             this.DeleteSelectedPlayerButton.UseVisualStyleBackColor = true;
+            this.DeleteSelectedPlayerButton.Click += new System.EventHandler(this.DeleteSelectedPlayerButton_Click);
             // 
             // CreateTeamButton
             // 
@@ -257,19 +259,20 @@
             this.CreateTeamButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CreateTeamButton.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CreateTeamButton.ForeColor = System.Drawing.Color.DarkGreen;
-            this.CreateTeamButton.Location = new System.Drawing.Point(368, 654);
+            this.CreateTeamButton.Location = new System.Drawing.Point(386, 573);
             this.CreateTeamButton.Name = "CreateTeamButton";
             this.CreateTeamButton.Size = new System.Drawing.Size(183, 49);
             this.CreateTeamButton.TabIndex = 23;
             this.CreateTeamButton.Text = "Créer équipe";
             this.CreateTeamButton.UseVisualStyleBackColor = true;
+            this.CreateTeamButton.Click += new System.EventHandler(this.CreateTeamButton_Click);
             // 
             // CreateTeamForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(952, 612);
+            this.ClientSize = new System.Drawing.Size(952, 636);
             this.Controls.Add(this.CreateTeamButton);
             this.Controls.Add(this.DeleteSelectedPlayerButton);
             this.Controls.Add(this.TeamMemberListBox);
