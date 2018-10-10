@@ -216,9 +216,9 @@
             this.PrizesLabel.ForeColor = System.Drawing.Color.DarkGreen;
             this.PrizesLabel.Location = new System.Drawing.Point(400, 392);
             this.PrizesLabel.Name = "PrizesLabel";
-            this.PrizesLabel.Size = new System.Drawing.Size(160, 25);
+            this.PrizesLabel.Size = new System.Drawing.Size(44, 25);
             this.PrizesLabel.TabIndex = 23;
-            this.PrizesLabel.Text = "Equipes / Joueurs";
+            this.PrizesLabel.Text = "Prix";
             // 
             // PrizesListBox
             // 
@@ -274,6 +274,7 @@
             this.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.Name = "CreateTournamentForm";
             this.Text = "Créer nouveau tournoi";
+            this.Load += new System.EventHandler(this.CreateTournamentForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
