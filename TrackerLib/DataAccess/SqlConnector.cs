@@ -104,7 +104,9 @@ namespace TrackerLib.DataAccess
 
                 foreach(TeamModel team in output)
                 {
-                    team.TeamMembers = connection.Query<PersonModel>("spTeamMembers_GetByTeam").ToList();
+                    var p = new DynamicParameters();
+                    p.Add("@TeamId", team.Id);
+                    team.TeamMembers = connection.Query<PersonModel>("spTeamMembers_GetByTeam", p, commandType: CommandType.StoredProcedure).ToList();
                 }
             }
             return output;
