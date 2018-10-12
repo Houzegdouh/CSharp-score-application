@@ -156,6 +156,7 @@
             this.AddPrizeButton.TabIndex = 18;
             this.AddPrizeButton.Text = "Ajouter prix";
             this.AddPrizeButton.UseVisualStyleBackColor = true;
+            this.AddPrizeButton.Click += new System.EventHandler(this.AddPrizeButton_Click);
             // 
             // TournamentTeamsListBox
             // 
